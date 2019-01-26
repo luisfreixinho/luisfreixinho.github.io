@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 h1,
@@ -326,8 +326,8 @@ span.exturl {
 }
 a:hover,
 span.exturl:hover {
-  color: #222;
-  border-bottom-color: #222;
+  color: #aaa;
+  border-bottom-color: #eee;
 }
 blockquote {
   margin: 0;
@@ -484,7 +484,7 @@ body {
 }
 .header-inner {
   margin: 0 auto;
-  padding: 100px 0 70px;
+  padding: 100px 0 45px;
   width: 700px;
 }
 @media (min-width: 1200px) {
@@ -1159,8 +1159,9 @@ pre .javascript .function {
 .brand {
   position: relative;
   display: inline-block;
-  padding: 0 40px;
-  color: #ccc;
+  padding: 10px 40px;
+  color: #222;
+background: #eee;
   border-bottom: none;
 }
 .brand:hover {
@@ -1424,6 +1425,7 @@ pre .javascript .function {
     margin: 0 20px;
   }
 }
+
 .posts-collapse .collection-title {
   position: relative;
   margin: 60px 0;
@@ -1457,7 +1459,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: border;
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px solid #333;
 }
 .posts-collapse .post-header::before {
   content: " ";
@@ -1483,7 +1485,7 @@ pre .javascript .function {
 }
 .posts-collapse .post-meta {
   position: absolute;
-  font-size: 12px;
+  font-size: 10px;
   left: 20px;
   top: 5px;
 }
@@ -1494,7 +1496,7 @@ pre .javascript .function {
   margin-left: 60px;
   font-size: 16px;
   font-weight: normal;
-  line-height: inherit;
+  line-height: inherit;  
 }
 .posts-collapse .post-title::after {
   margin-left: 3px;
@@ -1515,7 +1517,8 @@ pre .javascript .function {
   overflow-wrap: break-word;
   word-wrap: break-word;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
+  margin-bottom:-10px;     
 }
 .posts-expand .post-title-link {
   display: inline-block;
@@ -1529,10 +1532,11 @@ pre .javascript .function {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 13px;
+  margin-top: 2px;
   bottom: 0;
-  left: 0;
   background-color: #ccc;
+  opacity: 0.3;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -1542,6 +1546,10 @@ pre .javascript .function {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+
+.post-time{
+    color: #666;
 }
 .posts-expand .post-title-link:hover::before {
   visibility: visible;
@@ -1556,7 +1564,7 @@ pre .javascript .function {
   margin-left: 5px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 30px 0;
+  margin: 3px 0 15px 0;
   color: #bbb;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 8px;
@@ -1574,10 +1582,7 @@ pre .javascript .function {
   font-size: 14px;
   margin-top: 2px;
 }
-.posts-expand .post-meta time {
-  border-bottom: 1px dashed #eee;
-  cursor: help;
-}
+
 .post-meta-divider {
   margin: 0 0.5em;
 }
@@ -1614,12 +1619,14 @@ pre .javascript .function {
 .posts-expand .post-tags a {
   display: inline-block;
   margin-right: 10px;
-  font-size: 13px;
+  font-size: 10px;
+  border-bottom: 0px;
 }
 .post-nav {
   display: table;
   margin-top: 15px;
   width: 100%;
+    opacity: 0.2;
   border-top: 1px solid #eee;
 }
 .post-nav-divider {
@@ -1666,9 +1673,9 @@ pre .javascript .function {
 .posts-expand .post-eof {
   display: block;
   margin: 80px auto 60px;
-  width: 8%;
-  height: 1px;
-  background: #ccc;
+  width: 50%;
+  height: 2px;
+  background: #333;
   text-align: center;
 }
 .post:last-child .post-eof.post-eof.post-eof {
@@ -1838,7 +1845,7 @@ pre .javascript .function {
 .site-state-item {
   display: inline-block;
   padding: 0 15px;
-  border-left: 1px solid #333;
+  border-left: 1px solid #fff;
 }
 
 .site-state-item:first-child {
@@ -1948,11 +1955,11 @@ pre .javascript .function {
   margin-left: 10px;
 }
 .sidebar-nav .sidebar-nav-active {
-  color: #87daff;
-  border-bottom-color: #87daff;
+  color: #ccc;
+  border-bottom-color: #ccc;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #87daff;
+  color: #ccc;
 }
 .sidebar-panel {
   display: none;
@@ -2011,14 +2018,14 @@ pre .javascript .function {
   display: block;
 }
 .post-toc .nav .active > a {
-  color: #87daff;
-  border-bottom-color: #87daff;
+  color: #ccc;
+  border-bottom-color: #ccc;
 }
 .post-toc .nav .active-current > a {
-  color: #87daff;
+  color: #ccc;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #87daff;
+  color: #ccc;
 }
 .footer {
   font-size: 8px;
@@ -2274,6 +2281,7 @@ pre .javascript .function {
   position: relative;
   top: 3px;
   left: 20px;
+  opacity: 0.1;    
 }
 @media (max-width: 767px) {
   .page-archive .archive-page-counter {
@@ -2510,7 +2518,7 @@ pre .javascript .function {
   }
 }
 .page-post-detail .sidebar-toggle-line {
-  background: #87daff;
+  background: #ccc;
 }
 .page-post-detail .comments {
   overflow: hidden;
