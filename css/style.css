@@ -1,14 +1,39 @@
-html {
-    background-color: black;
-}
-
-body
+html, body
 {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 10pt;
+    font-size: 12pt;
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
 }
 
-.designlink {
-    color: aquamarine;
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url("/media/lisbon.gif");
+    background-repeat: repeat;
+    background-color: black;
+    display: table;
+    top:0;
+    background-size: cover;
+}
 
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: "Helvetica", sans-serif;
+    color: white;
 }
