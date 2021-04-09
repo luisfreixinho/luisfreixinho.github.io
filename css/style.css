@@ -25,9 +25,18 @@
 
 }
 
+@font-face {
+    font-family: 'futuralight';
+    src: url('futura_light_bt-webfont.woff2') format('woff2'),
+         url('futura_light_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body
 {
-    font-family: 'Futura', sans-serif;
+    font-family: 'futuraextra_black', sans-serif;
     font-size: 42pt;
     margin:0;
     padding:0;
@@ -49,7 +58,7 @@ html, body
 
 .intro .inner {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
     width: 100%;
     max-width: none;
 }
@@ -61,14 +70,19 @@ html, body
 }
 
 .content h1 {
-    font-size: 50px;
+    font-size: 25px;
     color: white;
     margin-bottom: -45px;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .content a{
-    font-size: 15px;
+    font-family: 'futuralight', sans-serif;
+    font-size: 10px;
     max-width: 500px;
     text-align: center;
+    text-decoration: dotted;
+    color: white;
+    margin:-5px;
 }
