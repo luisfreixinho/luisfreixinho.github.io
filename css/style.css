@@ -82,14 +82,14 @@ html, body
     font-size: 18px;
     max-width: 500px;
     text-align: center;
-    text-decoration: dotted;
+    text-decoration: none;
     color:#dcdcdc;
     margin:-5px;
 }
 
 .content a:hover{
     color: black;
-    background-color: #dcdcdc;
+    background-color: #c7b5b5;
 }
 
 @media screen and (max-width: 736px) {

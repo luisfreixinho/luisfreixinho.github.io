@@ -1,7 +1,14 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
+@font-face {
+    font-family: 'futuraextra_black';
+    src: url('../../../css/futura_extra_black_font-webfont.woff') format('woff'),
+         url('../../../css/futura_extra_black_font-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -20,6 +27,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -80,6 +88,23 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+#watermark { 
+	position: fixed; 
+	top:0;
+	right: 1;
+	z-index: 100032; 
+	margin-left: 18px;
+}
+
+#watermark a{ 
+	font-size: 50px;
+	color: #dcdcdc;
+	font-family: 'futuraextra_black', sans-serif;
+	letter-spacing: 5px;
+	text-decoration: none;
+
 }
 
 /* Basic */
@@ -158,15 +183,10 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #34a58e;
 		text-decoration: none;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #34a58e !important;
-		}
+
 
 	strong, b {
 		color: #ffffff;
@@ -186,7 +206,6 @@ input, select, textarea {
 		font-weight: 300;
 		letter-spacing: 0.1em;
 		line-height: 1.5;
-		margin: 0 0 1em 0;
 		text-transform: uppercase;
 	}
 
@@ -197,6 +216,7 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2em;
+		font-family: 'futuraextra_black', sans-serif;
 	}
 
 	h2 {
@@ -1299,27 +1319,32 @@ input, select, textarea {
 /* Header */
 
 
+
 	#header {
 		width: 100%;
 		z-index: 10002;
 		background: none !important;
-		position: relative;
+		position: fixed;
+		margin-top: 10px;
+
 	}
 
 
 		#header h1 {
 			color: #a0a0a1;
-			font-family: 'Futura', sans-serif;
 			display: inline-block;
 			font-size: 1em;
 			line-height: 1;
 			margin: 0;
 			vertical-align: middle;
+			font-family: 'futuraextra_black', sans-serif;
 		}
 
 			#header h1 a {
 				border: 0;
 				color: inherit;
+
+				font-family: 'futuraextra_black', sans-serif;
 			}
 
 				#header h1 a:hover {
