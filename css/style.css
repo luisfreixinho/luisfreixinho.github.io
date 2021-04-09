@@ -48,7 +48,7 @@ html, body
     height: 100%;
     width: 100%;
     margin: auto;
-    background-image: url("/media/lisbon.gif");
+    background-image: url("../media/lisboa.gif");
     background-repeat: repeat;
     background-color: black;
     display: table;
@@ -88,5 +88,6 @@ html, body
 }
 
 .content a:hover{
-    color: #282828;
+    color: black;
+    background-color: #dcdcdc;
 }
