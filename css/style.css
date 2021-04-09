@@ -1,6 +1,6 @@
 html, body
 {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Futura', sans-serif;
     font-size: 42pt;
     margin:0;
     padding:0;
@@ -28,12 +28,20 @@ html, body
 }
 
 .content {
-    max-width: 500px;
+    max-width: 1000px;
     margin:0 auto;
     text-align: center;
 }
 
 .content h1 {
-    font-family: "Helvetica", sans-serif;
+    font-size: 50px;
     color: white;
+    margin-bottom: -45px;
+    text-align: center;
+}
+
+.content a{
+    font-size: 15px;
+    max-width: 500px;
+    text-align: center;
 }
