@@ -91,3 +91,25 @@ html, body
     color: black;
     background-color: #dcdcdc;
 }
+
+@media screen and (max-width: 736px) {
+
+    .content h1 {
+        font-size: 30px;
+        color: #dcdcdc;
+        text-align: center;
+        letter-spacing: 5px;
+        margin-bottom: 15px;
+    }
+
+    .content a{
+        display: list-item;
+        font-family: 'futuralight', sans-serif;
+        font-size: 20;
+        text-align: center;
+        text-decoration: dotted;
+        color:#dcdcdc;
+        margin-bottom: 20px;
+    }
+
+}
