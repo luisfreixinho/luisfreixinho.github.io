@@ -100,16 +100,21 @@ html, body
         text-align: center;
         letter-spacing: 5px;
         margin-bottom: 15px;
+        margin: 0 auto;
     }
 
     .content a{
+        margin:0 auto;
         display: list-item;
+        list-style-type: none;
         font-family: 'futuralight', sans-serif;
         font-size: 20;
         text-align: center;
         text-decoration: dotted;
         color:#dcdcdc;
         margin-bottom: 20px;
+        max-width: 200px;
+        margi
     }
 
 }
