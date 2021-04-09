@@ -70,8 +70,8 @@ html, body
 }
 
 .content h1 {
-    font-size: 25px;
-    color: white;
+    font-size: 50px;
+    color: #dcdcdc;
     margin-bottom: -45px;
     text-align: center;
     letter-spacing: 5px;
@@ -79,10 +79,14 @@ html, body
 
 .content a{
     font-family: 'futuralight', sans-serif;
-    font-size: 10px;
+    font-size: 18px;
     max-width: 500px;
     text-align: center;
     text-decoration: dotted;
-    color: white;
+    color:#dcdcdc;
     margin:-5px;
+}
+
+.content a:hover{
+    color: #282828;
 }
